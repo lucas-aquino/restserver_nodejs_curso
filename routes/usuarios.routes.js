@@ -6,7 +6,7 @@ import {
   usuariosDELETE,
   usuariosPATCH 
 } from "../controllers/usuarios.controller.js"
-import { check } from "express-validator"
+import { check, param } from "express-validator"
 import { validarCampos} from "../middlewares/validar-campos.js"
 import { correoExiste, esRolValido, usuarioExiste, usuarioExistePorID } from "../helpers/db-validators.js"
 
@@ -14,8 +14,8 @@ import { correoExiste, esRolValido, usuarioExiste, usuarioExistePorID } from "..
 const usuariosRoutes = Router()
 
 usuariosRoutes.get('/', [
-  check('limite', 'El limite tiene que ser un numero').isNumeric(),
-  check('desde', 'desde tiene que ser un numero').isNumeric(),
+  param('limite', 'El limite tiene que ser un numero').optional().isNumeric(),
+  param('desde', 'desde tiene que ser un numero').optional().isNumeric(),
   validarCampos
 ], usuariosGET )
 
