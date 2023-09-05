@@ -1,0 +1,273 @@
+[{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2424"
+  },
+  "usuario": "lucas-aquino",
+  "nombre": "Lucas Aquino",
+  "correo": "lucas_aquino@mail.com",
+  "password": "$2a$10$ygUu/XUy5DRkP2Waw7HK2.w8tuq./hdZu7lVHP5TU4Ubi3o1P.Fbe",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2425"
+  },
+  "usuario": "lellicott0",
+  "nombre": "Lynnet Ellicott",
+  "correo": "lellicott0@aboutads.info",
+  "password": "$2a$10$OA/lk/onBQB5fYtJYf0I.Oa/bUZI4HmofCVWJvnotjFGFHB.LC/AO",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2428"
+  },
+  "usuario": "cknights3",
+  "nombre": "Costanza Knights",
+  "correo": "cknights3@technorati.com",
+  "password": "$2a$10$cvolmLRSpHYh6dfBEKqDm.4hFkO2.WxKUmKqhmngbibBAIX1D40Ai",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2429"
+  },
+  "usuario": "lquarmby4",
+  "nombre": "Linnie Quarmby",
+  "correo": "lquarmby4@gizmodo.com",
+  "password": "$2a$10$i3ZIt0Ytu1u3bmyMkr1Ra.Q2wYEqmryCcSztvYKC.7r/m8WWvxkpS",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242a"
+  },
+  "usuario": "mofihillie5",
+  "nombre": "Martyn O'Fihillie",
+  "correo": "mofihillie5@wikia.com",
+  "password": "$2a$10$Un1cGGcp/tlMxmcpmQumTu..QIvI9k9zBzmup7sTUeaQLtHIJlkIu",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242b"
+  },
+  "usuario": "dtigwell6",
+  "nombre": "Dena Tigwell",
+  "correo": "dtigwell6@adobe.com",
+  "password": "$2a$10$ziYOFe.5wkfB1kCgDaU7XOZEhdK5KDVTR05HOFsa/3iYvQDKn2E6S",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242c"
+  },
+  "usuario": "bizhaky7",
+  "nombre": "Berkly Izhaky",
+  "correo": "bizhaky7@twitpic.com",
+  "password": "$2a$10$L//pzVCli9iNgFCpI1WUS.II.OKSRh2VQ2fp5ROtUTIX5Ar.4muSC",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242d"
+  },
+  "usuario": "gdimmack8",
+  "nombre": "Giselbert Dimmack",
+  "correo": "gdimmack8@themeforest.net",
+  "password": "$2a$10$5pqr7TL3ioLQIVYj73VhZu48/ED7KKtzSR0OMT7EKPkWlNmmchRwO",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242e"
+  },
+  "usuario": "tfeasley9",
+  "nombre": "Timoteo Feasley",
+  "correo": "tfeasley9@irs.gov",
+  "password": "$2a$10$frEyqhbKxclNT2byEnorZuGGIYW837ciTROsWI.ghIOlLL0wmWjQS",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2426"
+  },
+  "usuario": "cbarrat1",
+  "nombre": "Curr Barrat",
+  "correo": "cbarrat1@hatena.ne.jp",
+  "password": "$2a$10$Bl8eArymwwofGg2Q6JFbbelmTlgPE9ewvosXB9nT4TorEesV.AkBi",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2427"
+  },
+  "usuario": "eciccottio2",
+  "nombre": "Enos Ciccottio",
+  "correo": "eciccottio2@godaddy.com",
+  "password": "$2a$10$Jg5XvtlvPLtDtcWh2ORJ2emexblr358173/MedEVw1pAZ.orOBJlW",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2431"
+  },
+  "usuario": "owheelwrightc",
+  "nombre": "Otho Wheelwright",
+  "correo": "owheelwrightc@cocolog-nifty.com",
+  "password": "$2a$10$GOalj8e2wLY9jdNHZ/8queW6Q9/jHFEO0G2UzHkqYMipdxF8.NdSS",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2432"
+  },
+  "usuario": "dcharlsond",
+  "nombre": "Daryn Charlson",
+  "correo": "dcharlsond@indiegogo.com",
+  "password": "$2a$10$Sg9a.1Kk4pBkSTfJLyjWSeQ4I3MHX4DUYCm.sfb2dpHdquiNjz186",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2433"
+  },
+  "usuario": "askillanderse",
+  "nombre": "Adriane Skillanders",
+  "correo": "askillanderse@goo.gl",
+  "password": "$2a$10$tPnLtn9P3jwAv0PYxS1eKOkVsroF30ARxxav0eC7Ub82oXQFs22Xy",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2434"
+  },
+  "usuario": "sborthramf",
+  "nombre": "Sabrina Borthram",
+  "correo": "sborthramf@amazon.co.jp",
+  "password": "$2a$10$.rgJ0GRd0ogYu5uWpUukiOqopGXhC.6NWud6MqA0G9z4n.ZLHSU16",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0681cba1e858ad2435"
+  },
+  "usuario": "cbizleyg",
+  "nombre": "Celle Bizley",
+  "correo": "cbizleyg@engadget.com",
+  "password": "$2a$10$ZlvNFjqwUH84LsK14l.5xuXUW07rVoIi/EwdkHMBlDUwpvH8vCBd.",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0681cba1e858ad2436"
+  },
+  "usuario": "lreedersh",
+  "nombre": "Lonee Reeders",
+  "correo": "lreedersh@dell.com",
+  "password": "$2a$10$EZ6JT6nyfz9eQG7BNYQLj.ZXbym52Zf3HCHcNPUOtzkqvo3IBDgs6",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0681cba1e858ad2437"
+  },
+  "usuario": "cravenshawi",
+  "nombre": "Clyde Ravenshaw",
+  "correo": "cravenshawi@twitter.com",
+  "password": "$2a$10$ODMiZadk6N4kx/fBppyl9uGYHL9v5Nxt0jWZ/9zO3sRcbDoEaK2kC",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0681cba1e858ad2438"
+  },
+  "usuario": "ggoudyj",
+  "nombre": "Gabriell Goudy",
+  "correo": "ggoudyj@altervista.org",
+  "password": "$2a$10$c2Hf3ZcqzXChWTAdR.d5AOp5nU281VbMAm63zr31XGYDuVNQ34hTq",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad242f"
+  },
+  "usuario": "amca",
+  "nombre": "Ania Mc Combe",
+  "correo": "amca@technorati.com",
+  "password": "$2a$10$jk8yBsCGe5FZJcYfAwkCnebjPKR4MWcoBz0yZe/9nz2nGe3xyV9wm",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f74c0581cba1e858ad2430"
+  },
+  "usuario": "azmitrovichb",
+  "nombre": "Andre Zmitrovich",
+  "correo": "azmitrovichb@bbc.co.uk",
+  "password": "$2a$10$mlDP0PWBB8ZK5unNOEoR3uAlheBpRLHBCV5jMncbBHD9AANL2LpgC",
+  "rol": "USER_ROL",
+  "estado": true,
+  "google": false,
+  "__v": 0
+}]
