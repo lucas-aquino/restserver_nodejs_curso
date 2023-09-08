@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { login, googleSignIn } from "../controllers/auth.js";
 import { check } from "express-validator";
 import { validarCampos } from "../middlewares/validar-campos.js";
+import { login, googleSignIn } from "../controllers/auth.controller.js";
 
 const authRouter = Router()
 
