@@ -49,6 +49,7 @@ const buscarCategoria = async (termino, res = response) => {
 
   if( esMongoID ) {
     const categoria = await Categoria.findById(termino)
+      .populate('usuario')
 
     return res.json({
       results: ( categoria ) ? [ categoria ] : []
@@ -60,7 +61,7 @@ const buscarCategoria = async (termino, res = response) => {
   const categorias = await Categoria.find({
     nombre: regex,
     $and : [{ estado: true }]
-  })
+  }).populate('usuario')
 
   res.json({
     results: categorias
@@ -75,21 +76,24 @@ const buscarProductos = async (termino, res = response) => {
 
   if( esMongoID ) {
     const producto = await Producto.findById(termino)
-
-    return res.json({
-      results: ( producto ) ? [ producto ] : []
-    })
-  }
-
-  const regex = new RegExp( termino, 'i' )
-
-  const productos = await Producto.find({ 
-    $or: [
-      { nombre: regex },
-      { descripcion: regex },
-    ],
-    $and: [{ estado: true }] //TODO: usar esto para el controlador de producto y categoria 
-  })
+      .populate('categoria')
+      .populate('usuario')
+      
+      return res.json({
+        results: ( producto ) ? [ producto ] : []
+      })
+    }
+    
+    const regex = new RegExp( termino, 'i' )
+    
+    const productos = await Producto.find({ 
+      $or: [
+        { nombre: regex },
+        { descripcion: regex },
+      ],
+      $and: [{ estado: true }] //TODO: usar esto para el controlador de producto y categoria 
+    }).populate('categoria')
+    .populate('usuario')
 
   res.json({
     results: productos
