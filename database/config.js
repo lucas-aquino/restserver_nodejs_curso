@@ -9,7 +9,7 @@ export const dbConnection = async () => {
       useUnifiedTopology: true
     })
 
-    console.log('CONECCION Establecida Correctamente')
+    console.log('CONEXION Establecida Correctamente')
 
   } catch (err) {
     console.log(`ERROR de conexion con la base de datos: ${err}`)

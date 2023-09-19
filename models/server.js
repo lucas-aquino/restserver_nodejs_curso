@@ -4,6 +4,8 @@ import { dbConnection } from '../database/config.js'
 import usuariosRoutes from '../routes/usuarios.routes.js'
 import authRouter from '../routes/auth.routes.js'
 import categoriasRouter from '../routes/categorias.routes.js'
+import productosRouter from '../routes/productos.routes.js'
+import buscarRouter from '../routes/buscar.routes.js'
 
 export default class Server {
 
@@ -14,8 +16,10 @@ export default class Server {
 
     this.paths = {
       auth: '/api/auth',
+      buscar: '/api/buscar',
+      categorias: '/api/categorias',
       usuarios: '/api/usuarios',
-      categorias: '/api/categorias'
+      productos: '/api/productos',
     }
 
 
@@ -49,8 +53,10 @@ export default class Server {
   routes() {
     
     this.app.use(this.paths.auth, authRouter)
+    this.app.use(this.paths.buscar, buscarRouter)
+    this.app.use(this.paths.categorias, categoriasRouter)
     this.app.use(this.paths.usuarios, usuariosRoutes)
-    this.app.use(this.paths.usuarios, categoriasRouter)
+    this.app.use(this.paths.productos, productosRouter)
     
   }
 

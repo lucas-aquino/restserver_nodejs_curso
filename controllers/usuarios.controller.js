@@ -3,8 +3,7 @@ import { Usuario } from "../models/usuario.js"
 import bcrypt from "bcryptjs"
 import { validationResult } from "express-validator"
 
-export const usuariosGET = async (req, res = response) => {
-
+export const obtenerUsuarios = async (req, res = response) => {
 
   const {
     limite = 5,
@@ -31,10 +30,17 @@ export const usuariosGET = async (req, res = response) => {
   })
 }
 
-export const usuariosPUT = async (req, res = response) => {
+export const actualizarUsuario = async (req, res = response) => {
 
   const { id } = req.params
-  const { _id, password, google, correo, usuario, ...resto } = req.body
+  const { 
+    _id, 
+    password, 
+    google, 
+    correo, 
+    usuario, 
+    ...resto 
+  } = req.body
 
   if( password ){
     const salt = bcrypt.genSaltSync()
@@ -54,7 +60,9 @@ export const usuariosPUT = async (req, res = response) => {
 
   res.json({ usuarioDB })
 }
-export const usuariosPOST = async (req, res = response) => {
+
+
+export const crearUsuario = async (req, res = response) => {
 
   const {
     usuario, 
@@ -86,7 +94,7 @@ export const usuariosPOST = async (req, res = response) => {
   })
 }
 
-export const usuariosDELETE = async (req, res = response) => {
+export const borrarUsuario = async (req, res = response) => {
   const { id } = req.params
 
   const usuario = await Usuario.findByIdAndUpdate( id, { estado: false } )

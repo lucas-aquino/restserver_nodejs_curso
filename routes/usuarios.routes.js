@@ -1,10 +1,5 @@
 import { Router } from "express"
 
-//import { validarCampos} from "../middlewares/validar-campos.js"
-//import { validarJWT } from "../middlewares/validar-jwt.js"
-//import { esAdmin, tieneRol } from "../middlewares/validar-roles.js"
-
-
 import { 
   validarCampos, 
   validarJWT, 
@@ -13,10 +8,10 @@ import {
 } from "../middlewares/index.js"
 
 import { 
-  usuariosGET, 
-  usuariosPUT, 
-  usuariosPOST,
-  usuariosDELETE,
+  obtenerUsuarios, 
+  actualizarUsuario, 
+  crearUsuario,
+  borrarUsuario,
   usuariosPATCH 
 } from "../controllers/usuarios.controller.js"
 import { check, param } from "express-validator"
@@ -34,7 +29,7 @@ usuariosRoutes.get('/', [
   param('limite', 'El limite tiene que ser un numero').optional().isNumeric(),
   param('desde', 'desde tiene que ser un numero').optional().isNumeric(),
   validarCampos
-], usuariosGET )
+], obtenerUsuarios )
 
 usuariosRoutes.put('/:id', [
   check('id', 'No es un ID valido').isMongoId(),
@@ -42,7 +37,7 @@ usuariosRoutes.put('/:id', [
   check('rol').custom( esRolValido ),
   check('usuario').custom( usuarioExiste ),
   validarCampos
-], usuariosPUT)
+], actualizarUsuario)
 
 usuariosRoutes.post('/', [
   check('usuario', 'El nombre de usuario es obligatorio').not().isEmpty(),
@@ -52,7 +47,7 @@ usuariosRoutes.post('/', [
   check('correo').custom( correoExiste ),
   check('rol').custom( esRolValido ),
   validarCampos
-], usuariosPOST)
+], crearUsuario)
 
 
 usuariosRoutes.delete('/:id', [
@@ -62,7 +57,7 @@ usuariosRoutes.delete('/:id', [
   check('id', 'No es un ID valido').isMongoId(),
   check('id').custom( usuarioExistePorID ),
   validarCampos
-], usuariosDELETE)
+], borrarUsuario)
 
 usuariosRoutes.patch('/', usuariosPATCH)
 
