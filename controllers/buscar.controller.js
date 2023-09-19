@@ -58,10 +58,16 @@ const buscarCategoria = async (termino, res = response) => {
 
   const regex = new RegExp( termino, 'i' )
 
+  const populteFilter = {
+    nombre: 1,
+    usuario: 1,
+    correo: 1
+  }
+
   const categorias = await Categoria.find({
     nombre: regex,
     $and : [{ estado: true }]
-  }).populate('usuario')
+  }).populate('usuario', populteFilter)
 
   res.json({
     results: categorias
@@ -86,14 +92,26 @@ const buscarProductos = async (termino, res = response) => {
     
     const regex = new RegExp( termino, 'i' )
     
+    const populteFilter = {
+      usuario: {
+        nombre: 1,
+        usuario: 1,
+        correo: 1
+      },
+      categoria: {
+        nombre: 1
+      }
+    }
+  
+
     const productos = await Producto.find({ 
       $or: [
         { nombre: regex },
         { descripcion: regex },
       ],
       $and: [{ estado: true }] //TODO: usar esto para el controlador de producto y categoria 
-    }).populate('categoria')
-    .populate('usuario')
+    }).populate('categoria', populteFilter.categoria)
+    .populate('usuario', populteFilter.usuario)
 
   res.json({
     results: productos
