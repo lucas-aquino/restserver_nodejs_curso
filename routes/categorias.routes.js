@@ -10,7 +10,10 @@ import {
   crearCategoria, 
   actualizarCategoria 
 } from "../controllers/categorias.controller.js";
-import { usuarioExiste, categoriaExistePorID } from "../helpers/db-validators.js";
+import { 
+  usuarioExiste, 
+  categoriaExistePorID 
+} from "../helpers/db-validators.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 
 
